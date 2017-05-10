@@ -38,9 +38,13 @@ def main():
     
     fields = args.fields.strip().split(args.separator)
 
+    c = 0
     if fields[0] != '' and fields[0] != 'all_columns':
-        if fields[0].isdigit():
-            fields = list(map(int, fields))
+        for i in range(len(fields)):
+            if fields[i].isdigit():
+                c += 1
+    if(c == len(fields)):
+        fields = list(map(int, fields))
 
     for i in range(1):
         first_rows.append(input_stream.readline().strip().split(args.separator))
