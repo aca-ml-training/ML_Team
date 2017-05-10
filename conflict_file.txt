@@ -1,1 +1,5 @@
+<<<<<<< b71f9ea2e8745d49a8195f34b66352c7d0913842
 Hello from A
+=======
+Hello from B
+>>>>>>> conflict commited from B
