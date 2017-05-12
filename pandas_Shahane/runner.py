@@ -23,7 +23,7 @@ def accuracy_score(Y_true, Y_predict):
     return acc
 
 
-def evaluate_performance():
+def evaluate_performance(X,y):
     
     '''
     evaluate_performance a function that evaluates the performance of decision trees and logistic regression,
@@ -39,10 +39,6 @@ def evaluate_performance():
     '''
 
     # Load Data
-    filename = 'SPECTF.dat'
-    data = np.loadtxt(filename, delimiter=',')
-    X = data[:, 1:]
-    y = np.array([data[:, 0]]).T
     n, d = X.shape
 
     
