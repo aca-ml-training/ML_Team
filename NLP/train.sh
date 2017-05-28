@@ -1,0 +1,1 @@
+./fasttext supervised -input $1 -output $2 -lr 1.5 -epoch 4 -wordNgrams 3
